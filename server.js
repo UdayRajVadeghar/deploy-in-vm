@@ -8,7 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello from the virtual machine git actions running");
+  res.send(
+    "Hello from the virtual machine git actions running and fixed error"
+  );
 });
 
 app.listen(PORT, "0.0.0.0", () => {
